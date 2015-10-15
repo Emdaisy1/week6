@@ -14,8 +14,12 @@ var articles = require('./routes/articles');
 
 var app = express();
 
+//local
 // connect to mongodb with mongoose
-mongoose.connect('mongodb://localhost/comp2068-pm');
+//mongoose.connect('mongodb://localhost/comp2068-pm');
+
+//live
+mongoose.connect('mongodb://Emdaisy1:fluffymoogles1996@ds048368.mongolab.com:48368/comp2068oct15')
 
 // check connection
 var db = mongoose.connection;
